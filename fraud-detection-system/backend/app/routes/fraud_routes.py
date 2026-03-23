@@ -1,0 +1,14 @@
+from flask import Blueprint, jsonify, request
+from app.services.fraud_service import get_flagged_transactions,get_fraud_stats
+
+fraud_bp = Blueprint("fraud", __name__)
+
+@fraud_bp.route("/fraud/flagged-transactions", methods=["GET"])
+def get_flagged_transactions_route():
+    flagged_transactions = get_flagged_transactions()
+    return jsonify(flagged_transactions), 200
+
+@fraud_bp.route("/fraud/stats", methods=["GET"])
+def get_fraud_stats_route():
+    fraud_stats = get_fraud_stats()
+    return jsonify(fraud_stats), 200

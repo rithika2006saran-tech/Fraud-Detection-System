@@ -2,13 +2,16 @@ from flask import Flask
 from flask_cors import CORS
 from app.routes.transaction_routes import transaction_bp
 from app.routes.blacklist_routes import blacklist_bp
+from app.routes.fraud_routes import fraud_bp
+from app.routes.auth_routes import auth_bp
 
 app = Flask(__name__)
 CORS(app)
 
 app.register_blueprint(transaction_bp)
 app.register_blueprint(blacklist_bp)
-
+app.register_blueprint(fraud_bp)
+app.register_blueprint(auth_bp)
 
 @app.route('/')
 def home():

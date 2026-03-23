@@ -12,3 +12,4 @@ db = client[DB_NAME]
 
 transactions_collection = db["transactions"]
 blacklist_collection = db["blacklist"]
+users_collection = db["users"]
