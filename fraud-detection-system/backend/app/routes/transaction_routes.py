@@ -3,10 +3,12 @@ from app.services.transaction_service import create_transaction, get_all_transac
 from app.services.transaction_service import get_transaction_by_id
 from app.utils.validators import validate_transaction
 from app.services.transaction_service import get_transactions_by_user
+from app.middleware.auth_middleware import token_required
 
 transaction_bp = Blueprint('transaction_bp', __name__)
 
 @transaction_bp.route('/transactions', methods=['POST'])
+@token_required
 def add_transaction():
     data = request.get_json()
 
