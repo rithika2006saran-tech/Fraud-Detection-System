@@ -1,0 +1,13 @@
+[31mfailed to load config from D:\project\Fraud-Detection-System\fraud-detection-system\frontend\vite.config.ts[39m
+[31merror when starting dev server:
+Error: spawn EPERM
+    at ChildProcess.spawn (node:internal/child_process:421:11)
+    at Object.spawn (node:child_process:761:9)
+    at ensureServiceIsRunning (D:\project\Fraud-Detection-System\fraud-detection-system\frontend\node_modules\esbuild\lib\main.js:1978:29)
+    at build (D:\project\Fraud-Detection-System\fraud-detection-system\frontend\node_modules\esbuild\lib\main.js:1876:26)
+    at bundleConfigFile (file:///D:/project/Fraud-Detection-System/fraud-detection-system/frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:49274:24)
+    at async bundleAndLoadConfigFile (file:///D:/project/Fraud-Detection-System/fraud-detection-system/frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:49258:19)
+    at async loadConfigFromFile (file:///D:/project/Fraud-Detection-System/fraud-detection-system/frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:49222:44)
+    at async resolveConfig (file:///D:/project/Fraud-Detection-System/fraud-detection-system/frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:48718:24)
+    at async _createServer (file:///D:/project/Fraud-Detection-System/fraud-detection-system/frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:38329:18)
+    at async CAC.<anonymous> (file:///D:/project/Fraud-Detection-System/fraud-detection-system/frontend/node_modules/vite/dist/node/cli.js:753:20)[39m
